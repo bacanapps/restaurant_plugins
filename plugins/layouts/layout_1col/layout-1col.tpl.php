@@ -19,7 +19,7 @@
   <?php endif; ?>
     
   <div id="content">
-    <?php print $content['page_content']; ?>
+    <?php print $content['contentmain']; ?>
   </div> <!-- /#content -->
 
 </div> <!-- /.layout-1col -->
