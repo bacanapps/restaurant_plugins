@@ -47,7 +47,7 @@
   </header> <!-- /#header -->
 
   <?php if ($content['navigation']): ?>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-inverse" id="navigation" role="navigation">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
