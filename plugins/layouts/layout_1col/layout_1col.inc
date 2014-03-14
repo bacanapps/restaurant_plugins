@@ -7,6 +7,11 @@ $plugin = array(
   'theme' => 'layout_1col',
   'regions' => array(
     'banner' => t('banner'),
-    'contentmain' => t('Content'),
+    'contentmain1' => t('Content 1'),
+    'contentmain2' => t('Content 2'),
+    'contentmain3' => t('Content 3'),
+    'full_width_1' => t('Full Width 1'),
+    'full_width_2' => t('Full Width 2'),
+    'full_width_3' => t('Full Width 3'),
   ),
 );

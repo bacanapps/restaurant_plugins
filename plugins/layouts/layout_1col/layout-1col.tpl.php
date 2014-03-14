@@ -18,10 +18,40 @@
     </div> <!-- /#banner -->
   <?php endif; ?>
     
-  <div id="content">
+  <div id="contentmain1">
     <div class="container">
-      <?php print $content['contentmain']; ?>
+      <?php print $content['contentmain1']; ?>
     </div>
-  </div> <!-- /#content -->
+  </div> <!-- /#contentmain1 -->
+
+  <div id="full-width-1">
+    <div class="container">
+      <?php print $content['full_width_1']; ?>
+    </div>
+  </div> <!-- /#full-width-1 -->
+
+  <div id="contentmain2">
+    <div class="container">
+      <?php print $content['contentmain2']; ?>
+    </div>
+  </div> <!-- /#contentmain2 -->
+
+  <div id="full-width-2">
+    <div class="container">
+      <?php print $content['full_width_2']; ?>
+    </div>
+  </div> <!-- /#full-width-2 -->
+
+  <div id="contentmain3">
+    <div class="container">
+      <?php print $content['contentmain3']; ?>
+    </div>
+  </div> <!-- /#contentmain3 -->
+
+  <div id="full-width-3">
+    <div class="container">
+      <?php print $content['full_width_3']; ?>
+    </div>
+  </div> <!-- /#full-width-3 -->
 
 </div> <!-- /.layout-1col -->
