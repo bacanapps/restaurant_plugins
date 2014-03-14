@@ -18,7 +18,7 @@ function restaurant_plugins_ctools_plugin_directory($module, $plugin) {
 function restaurant_plugins_theme() {
   return array(
     'contact_info_pane' => array(
-      'variables' => array('address' => NULL, 'phone' => NULL),
+      'variables' => array('address' => NULL, 'phone' => NULL, 'email' => NULL),
       'template' => 'templates/contact-info-pane',
       'file' => 'restaurant_plugins.theme.inc',
     ),

@@ -19,7 +19,9 @@
   <?php endif; ?>
     
   <div id="content">
-    <?php print $content['contentmain']; ?>
+    <div class="container">
+      <?php print $content['contentmain']; ?>
+    </div>
   </div> <!-- /#content -->
 
 </div> <!-- /.layout-1col -->

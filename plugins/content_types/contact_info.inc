@@ -47,6 +47,7 @@ function restaurant_plugins_contact_info_content_type_render($subtype, $conf, $a
   $block->content = theme('contact_info_pane', array(
     'address' => restaurant_base_get_settings('address'),
     'phone' => restaurant_base_get_settings('phone'),
+    'email' => restaurant_base_get_settings('email'),
   ));
 
   return $block;
