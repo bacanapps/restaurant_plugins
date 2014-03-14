@@ -13,45 +13,51 @@
 <div class="layout-1col clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   
   <?php if ($content['banner']): ?>
-    <div id="banner">
+    <div id="banner" class="region">
       <?php print $content['banner']; ?>
     </div> <!-- /#banner -->
   <?php endif; ?>
-    
-  <div id="contentmain1">
-    <div class="container">
-      <?php print $content['contentmain1']; ?>
-    </div>
-  </div> <!-- /#contentmain1 -->
+  
+  <?php if ($content['contentmain1']): ?>
+    <div id="contentmain1" class="region">
+      <div class="container">
+        <?php print $content['contentmain1']; ?>
+      </div>
+    </div> <!-- /#contentmain1 -->
+  <?php endif; ?>
 
-  <div id="full-width-1">
-    <div class="container">
+  <?php if ($content['full_width_1']): ?>
+    <div id="full-width-1" class="region">
       <?php print $content['full_width_1']; ?>
-    </div>
-  </div> <!-- /#full-width-1 -->
+    </div> <!-- /#full-width-1 -->
+  <?php endif; ?>
 
-  <div id="contentmain2">
-    <div class="container">
-      <?php print $content['contentmain2']; ?>
-    </div>
-  </div> <!-- /#contentmain2 -->
+  <?php if ($content['contentmain2']): ?>  
+    <div id="contentmain2" class="region">
+      <div class="container">
+        <?php print $content['contentmain2']; ?>
+      </div>
+    </div> <!-- /#contentmain2 -->
+  <?php endif; ?>
 
-  <div id="full-width-2">
-    <div class="container">
+  <?php if ($content['full_width_2']): ?>
+    <div id="full-width-2" class="region">
       <?php print $content['full_width_2']; ?>
-    </div>
-  </div> <!-- /#full-width-2 -->
+    </div> <!-- /#full-width-2 -->
+  <?php endif; ?>
 
-  <div id="contentmain3">
-    <div class="container">
-      <?php print $content['contentmain3']; ?>
-    </div>
-  </div> <!-- /#contentmain3 -->
+  <?php if ($content['contentmain3']): ?>
+    <div id="contentmain3" class="region">
+      <div class="container">
+        <?php print $content['contentmain3']; ?>
+      </div>
+    </div> <!-- /#contentmain3 -->
+  <?php endif; ?>
 
-  <div id="full-width-3">
-    <div class="container">
+  <?php if ($content['full_width_3']): ?>
+    <div id="full-width-3" class="region">
       <?php print $content['full_width_3']; ?>
-    </div>
-  </div> <!-- /#full-width-3 -->
+    </div> <!-- /#full-width-3 -->
+  <?php endif; ?>
 
 </div> <!-- /.layout-1col -->
