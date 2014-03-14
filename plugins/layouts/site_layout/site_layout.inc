@@ -10,8 +10,9 @@ $plugin = array(
     'navigation_left' => t('Navigation left'),
     'navigation_right' => t('Navigation Right'),
     'page_content' => t('Page content'),
+    'triptych_first' => t('Triptych first'),
+    'triptych_last' => t('Triptych last'),
     'footer_col1' => t('Footer column 1'),
     'footer_col2' => t('Footer column 2'),
-    'footer_col3' => t('Footer column 3'),
   ),
 );
