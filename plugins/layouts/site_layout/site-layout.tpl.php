@@ -24,12 +24,15 @@
     </div>
   <?php endif; ?>
 
-  <?php if ($content['navigation']): ?>
+  <?php if ($content['navigation_left'] || $content['navigation_right']): ?>
     <nav class="navbar navbar-inverse" id="navigation" role="navigation">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <?php print $content['navigation']; ?>
+          <div class="col-md-2">
+            <?php print $content['navigation_left']; ?>
+          </div>
+          <div class="col-md-10">
+            <?php print $content['navigation_right']; ?>
           </div>
         </div>
       </div>
