@@ -12,12 +12,12 @@
 
 <div class="layout-1col clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   
-  <?php if ($content['banner']): ?>
-    <div id="banner" class="panel-pane-region panel-region-full-width">
+  <?php if ($content['header']): ?>
+    <div id="header" class="panel-pane-region panel-region-full-width">
       <div class="panel-region-inner">
-        <?php print $content['banner']; ?>
+        <?php print $content['header']; ?>
       </div>
-    </div> <!-- /#banner -->
+    </div> <!-- /#header -->
   <?php endif; ?>
   
   <?php if ($content['contentmain1']): ?>

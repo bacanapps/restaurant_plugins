@@ -11,21 +11,9 @@
 ?>
 
 <div class="site-layout clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  
-  <?php if ($content['top']): ?>
-    <div id="top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <?php print $content['top']; ?>
-          </div>
-        </div>
-      </div>
-    </div>
-  <?php endif; ?>
 
   <?php if ($content['navigation_left'] || $content['navigation_right']): ?>
-    <nav class="navbar navbar-default" id="navigation" role="navigation">
+    <nav class="navbar navbar-inverse" id="navigation" role="navigation">
       <div class="container">
         <div class="row">
           <div class="col-md-2">

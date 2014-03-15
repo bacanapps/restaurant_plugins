@@ -6,7 +6,6 @@ $plugin = array(
   'category' => t('Restaurant'),
   'theme' => 'site_layout',
   'regions' => array(
-    'top' => t('Top'),
     'navigation_left' => t('Navigation left'),
     'navigation_right' => t('Navigation Right'),
     'page_content' => t('Page content'),
