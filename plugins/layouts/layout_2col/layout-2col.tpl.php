@@ -51,7 +51,7 @@
         <div class="panel-region-inner">
           <div class="row">
             <div class="col-md-8 contentmain2-left">
-              <?php print $content['contentmain1_left']; ?>
+              <?php print $content['contentmain2_left']; ?>
             </div>
             <div class="col-md-4 contentmain2-right">
               <?php print $content['contentmain2_right']; ?>
@@ -76,7 +76,7 @@
         <div class="panel-region-inner">
           <div class="row">
             <div class="col-md-8 contentmain3-left">
-              <?php print $content['contentmain1_left']; ?>
+              <?php print $content['contentmain3_left']; ?>
             </div>
             <div class="col-md-4 contentmain3-right">
               <?php print $content['contentmain3_right']; ?>
