@@ -31,7 +31,7 @@
   <?php endif; ?>
 
   <?php if ($content['full_width_1']): ?>
-    <div id="full-width-1" class="panel-pane-region panel-region-full-width">
+    <div id="full-width-1" class="panel-pane-region panel-region-full-width gray-wrapper">
       <div class="panel-region-inner">
         <?php print $content['full_width_1']; ?>
       </div>

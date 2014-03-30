@@ -45,15 +45,18 @@
     </div> <!-- /#fullwidth1 -->
   <?php endif; ?>
 
-  <?php if ($content['contentmain2_left'] || $content['contentmain2_right']): ?>
+  <?php if ($content['contentmain2_left'] || $content['contentmain2_right'] || $content['contentmain2_center']): ?>
     <div id="contentmain2" class="panel-pane-region">
       <div class="container">
         <div class="panel-region-inner">
           <div class="row">
-            <div class="col-md-8 contentmain2-left">
+            <div class="col-md-2 contentmain2-left">
               <?php print $content['contentmain2_left']; ?>
             </div>
-            <div class="col-md-4 contentmain2-right">
+            <div class="col-md-8 contentmain2-center">
+              <?php print $content['contentmain2_center']; ?>
+            </div>
+            <div class="col-md-2 contentmain2-right">
               <?php print $content['contentmain2_right']; ?>
             </div>
           </div>
