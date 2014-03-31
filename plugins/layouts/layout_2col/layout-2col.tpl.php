@@ -13,7 +13,7 @@
 <div class="layout-2col clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   
   <?php if ($content['header']): ?>
-    <div id="header" class="panel-pane-region panel-region-full-width">
+    <div class="panel-pane-region panel-pane-region-header <?php print $extra_classes['header']; ?>">
       <div class="panel-region-inner">
         <?php print $content['header']; ?>
       </div>
@@ -21,81 +21,37 @@
   <?php endif; ?>
   
   <?php if ($content['contentmain1_left'] || $content['contentmain1_right']): ?>
-    <div id="contentmain1" class="panel-pane-region">
-      <div class="container">
-        <div class="panel-region-inner">
-          <div class="row">
-            <div class="col-md-4 contentmain1-right">
-              <?php print $content['contentmain1_right']; ?>
-            </div>
-            <div class="col-md-8 contentmain1-left">
-              <?php print $content['contentmain1_left']; ?>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 panel-pane-region panel-pane-region-contentmain1-left <?php print $extra_classes['contentmain1_left']; ?>">
+          <?php print $content['contentmain1_left']; ?>
+        </div>
+        <div class="col-md-4 panel-pane-region panel-pane-region-contentmain1-right <?php print $extra_classes['contentmain1_right']; ?>">
+          <?php print $content['contentmain1_right']; ?>
         </div>
       </div>
-    </div> <!-- /#contentmain1 -->
+    </div>
   <?php endif; ?>
 
   <?php if ($content['fullwidth1']): ?>
-    <div id="fullwidth1" class="panel-pane-region panel-region-full-width">
+    <div class="panel-pane-region panel-region-full-width gray-wrapper <?php print $extra_classes['fullwidth1']; ?>">
       <div class="panel-region-inner">
         <?php print $content['fullwidth1']; ?>
       </div>
     </div> <!-- /#fullwidth1 -->
   <?php endif; ?>
 
-  <?php if ($content['contentmain2_left'] || $content['contentmain2_right'] || $content['contentmain2_center']): ?>
-    <div id="contentmain2" class="panel-pane-region">
-      <div class="container">
-        <div class="panel-region-inner">
-          <div class="row">
-            <div class="col-md-2 contentmain2-left">
-              <?php print $content['contentmain2_left']; ?>
-            </div>
-            <div class="col-md-8 contentmain2-center">
-              <?php print $content['contentmain2_center']; ?>
-            </div>
-            <div class="col-md-2 contentmain2-right">
-              <?php print $content['contentmain2_right']; ?>
-            </div>
-          </div>
+  <?php if ($content['contentmain2_left'] || $content['contentmain2_right']): ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 panel-pane-region panel-pane-region-contentmain2-left <?php print $extra_classes['contentmain2_left']; ?>">
+          <?php print $content['contentmain2_left']; ?>
+        </div>
+        <div class="col-md-8 panel-pane-region panel-pane-region-contentmain2-right <?php print $extra_classes['contentmain2_right']; ?>">
+          <?php print $content['contentmain2_right']; ?>
         </div>
       </div>
-    </div> <!-- /#contentmain2 -->
-  <?php endif; ?>
-
-  <?php if ($content['fullwidth2']): ?>
-    <div id="fullwidth2" class="panel-pane-region panel-region-full-width">
-      <div class="panel-region-inner">
-        <?php print $content['fullwidth2']; ?>
-      </div>
-    </div> <!-- /#fullwidth2 -->
-  <?php endif; ?>
-
-  <?php if ($content['contentmain3_left'] || $content['contentmain3_right']): ?>
-    <div id="contentmain3" class="panel-pane-region">
-      <div class="container">
-        <div class="panel-region-inner">
-          <div class="row">
-            <div class="col-md-8 contentmain3-left">
-              <?php print $content['contentmain3_left']; ?>
-            </div>
-            <div class="col-md-4 contentmain3-right">
-              <?php print $content['contentmain3_right']; ?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- /#contentmain3 -->
-  <?php endif; ?>
-
-  <?php if ($content['fullwidth3']): ?>
-    <div id="fullwidth3" class="panel-pane-region panel-region-full-width">
-      <div class="panel-region-inner">
-        <?php print $content['fullwidth3']; ?>
-      </div>
-    </div> <!-- /#fullwidth3 -->
+    </div>
   <?php endif; ?>
 
 </div> <!-- /.layout-2col -->

@@ -34,3 +34,26 @@ function restaurant_plugins_theme() {
     ),
   );
 }
+
+/**
+ * Implements hook_preprocess().
+ */
+function restaurant_plugins_preprocess(&$variables, $hook) {
+  if (isset($variables['layout']) && isset($variables['renderer'])) {
+    $variables['extra_classes_array'] = array();
+    $regions = array_keys($variables['layout']['regions']);
+    foreach ($regions as $region) {
+      $variables['extra_classes_array'][$region] = array();
+      
+      // If a region is empty, add an extra class to it.
+      if (!isset($variables['display']->panels[$region])) {
+        $variables['extra_classes_array'][$region][] = 'panel-pane-region-empty';
+      }
+    }
+
+    // Make extra classes printable.
+    foreach ($variables['extra_classes_array'] as $key => $extra_classes) {
+      $variables['extra_classes'][$key] = implode(" ", $extra_classes);
+    }
+  }
+}
