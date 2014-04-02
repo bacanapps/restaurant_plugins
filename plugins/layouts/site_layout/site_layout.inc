@@ -6,11 +6,9 @@ $plugin = array(
   'category' => t('Restaurant'),
   'theme' => 'site_layout',
   'regions' => array(
-    'navigation_left' => t('Navigation left'),
-    'navigation_right' => t('Navigation Right'),
+    'sidebar_left' => t('Sidebar left'),
+    'header' => t('Header'),
     'page_content' => t('Page content'),
-    'triptych_first' => t('Triptych first'),
-    'triptych_last' => t('Triptych last'),
     'footer_col1' => t('Footer column 1'),
     'footer_col2' => t('Footer column 2'),
   ),

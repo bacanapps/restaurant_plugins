@@ -10,44 +10,48 @@
  */
 ?>
 
-<div class="site-layout clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+<?php if ($content['sidebar_left']): ?>
+  <aside id="sidebar-left" class="sidebar">
+    <?php print $content['sidebar_left']; ?>
+  </aside>
+<?php endif; ?>
 
-  <?php if ($content['navigation_left'] || $content['navigation_right']): ?>
-    <nav class="navbar navbar-default" id="navigation" role="navigation">
+<section class="main-wrapper">
+    <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 panel-pane-region panel-pane-region-navigation-left">
-            <?php print $content['navigation_left']; ?>
-          </div>
-          <div class="col-md-4 panel-pane-region panel-pane-region-navigation-right">
-            <?php print $content['navigation_right']; ?>
-          </div>
+          <?php if ($content['sidebar_left']): ?>
+            <div class="col-xs-1 text-left">
+              <a href="#" data-toggle="push" data-target="#sidebar-left" data-position="right">
+                <i class="fa fa-bars fa-border fa-2x"></i>
+              </a>
+            </div>
+            <div class="col-xs-10 text-center">
+              <?php print $content['header']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
-    </nav>
-  <?php endif; ?>
-    
-  <div id="main-wrapper">
-    <div id="main" class="main">
+    </header>
+
+    <div class="main">
       <?php print $content['page_content']; ?>
     </div> <!-- /#main -->
-  </div> <!-- /#main-wrapper -->
 
-  <footer id="footer" class="header" role="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 column-1">
-          <div class="panel-panel-inner">
-            <?php print $content['footer_col1']; ?>
+    <footer class="footer" role="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 column-1">
+            <div class="panel-panel-inner">
+              <?php print $content['footer_col1']; ?>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 column-2">
-          <div class="panel-panel-inner">
-            <?php print $content['footer_col2']; ?>
+          <div class="col-md-4 column-2">
+            <div class="panel-panel-inner">
+              <?php print $content['footer_col2']; ?>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer> <!-- /#footer -->
-
-</div> <!-- /.site-layout -->
+    </footer> <!-- /#footer -->
+</section> <!-- /.site-layout -->
